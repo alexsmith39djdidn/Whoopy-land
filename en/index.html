@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <script>document.documentElement.classList.add('js')</script>
@@ -10,8 +10,8 @@
      opacity:0 безусловно, и при любом сбое page.js/home.js (сеть,
      блокировщик, ошибка в скрипте) страница оставалась пустой навсегда. -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Whoopy — второй мозг компании</title>
-<meta name="description" content="Второй мозг — управляющий центр компании. Первый такой мозг мы собрали себе: Whoopy управляется им с июня 2026.">
+<title>Whoopy — the second brain of a company</title>
+<meta name="description" content="A second brain is the control centre of a company. We built the first one for ourselves — Whoopy has been run by it since June 2026.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <!-- Onest подрезан до двух весов: 300 и 600 были подключены, но в вёрстке
@@ -23,7 +23,7 @@
      дом, что Onest по духу (ParaType, кириллица спроектирована, а не
      дорисована), один вес, 16 КБ на оба алфавита. -->
 <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500&family=PT+Mono&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="../home.css">
 </head>
 <body>
 
@@ -33,33 +33,33 @@
     <a class="brand" href="#top">Whoopy</a>
 
     <nav class="nav">
-      <a class="lang" href="en/index.html" hreflang="en" lang="en">EN</a>
+      <a class="lang" href="../index.html" hreflang="ru" lang="ru">RU</a>
       <!-- ⚠️ href подставить: прямая ссылка на Сашу -->
-      <a class="write" href="https://t.me/mr_nobode" target="_blank" rel="noopener">Написать</a>
+      <a class="write" href="https://t.me/mr_nobode" target="_blank" rel="noopener">Get in touch</a>
     </nav>
   </div>
 </div>
 
 <!-- ── Оглавление точками ───────────────────────────────── -->
 <nav class="dots" id="dots">
-  <a href="#top" data-t="Начало"></a>
-  <a href="#made" data-t="Что сделали"></a>
-  <a href="#social" data-t="Где читать"></a>
-  <a href="#clients" data-t="Кому сделали"></a>
-  <a href="#about" data-t="Что делаем"></a>
-  <a href="#write" data-t="Написать"></a>
+  <a href="#top" data-t="Start"></a>
+  <a href="#made" data-t="What we built"></a>
+  <a href="#social" data-t="Where we are"></a>
+  <a href="#clients" data-t="Who we built for"></a>
+  <a href="#about" data-t="What we do"></a>
+  <a href="#write" data-t="Get in touch"></a>
 </nav>
 
 <!-- ── Первый экран ─────────────────────────────────────── -->
 <header class="hero" id="top">
   <div class="orbs" aria-hidden="true"><span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span><span class="orb o4"></span></div>
-  <h1>Этой компанией<br><span class="lockline">управляет <span class="swap" id="swap" data-words="второй мозг|ИИ"><span class="hold">второй мозг</span><span class="live" id="swapLive">второй мозг</span></span></span></h1>
+  <h1>This company<br><span class="lockline">is run by <span class="swap" id="swap" data-words="a second brain|AI"><span class="hold">a second brain</span><span class="live" id="swapLive">a second brain</span></span></span></h1>
   <!-- Вторая фраза была «У Whoopy он ведёт в том числе эту страницу».
        Снята 03.08.2026: та же болезнь, что и остальные отсылки, — страница
        говорит про саму себя. Здесь это к тому же самая слабая позиция:
        человек на первом экране ещё не знает, что мы предлагаем, а мы уже
        тратим половину подзаголовка на факт о сайте. -->
-  <p class="lead">Второй мозг — управляющий центр компании: память, задачи, проекты, отделы.</p>
+  <p class="lead">A second brain is the control centre of a company: memory, tasks, projects, departments.</p>
   <div class="scroll-hint"></div>
 </header>
 
@@ -67,11 +67,11 @@
 <section class="sec made" id="made">
   <div class="wrap">
     <div class="head rev">
-      <h2>Что сделали</h2>
+      <h2>What we’ve built</h2>
       <!-- было «свои разработки — каждую можно открыть и почитать, как это
            было»: множественное число осталось от трёх карточек, а карточка
            теперь одна — подзаголовок обещал больше, чем показывает раздел -->
-      <span class="sub">собственная разработка компании — можно открыть и посмотреть, как она устроена внутри</span>
+      <span class="sub">our own build — you can open it and see how it works inside</span>
     </div>
 
     <div class="row">
@@ -80,51 +80,44 @@
         <div class="shot big">
           <div class="grid-bg"></div>
           <div class="dia">
-            <div class="d-core">Главный бот<span>ведёт компанию целиком: план, деньги, задачи остальным</span><em class="mem dark">44 файла своей памяти</em></div>
+            <div class="d-core">Lead specialist<span>runs the company as a whole: the plan, the money, the tasks for everyone else</span><em class="mem dark">44 files of its own memory</em></div>
             <div class="d-fork"></div>
             <div class="d-row">
               <!-- было «тексты, соцсети, эта страница» — последняя отсылка
                    страницы к самой себе. Приём сильный, но правило Саши от
                    03.08 общее, и он снял такую же фразу с первого экрана -->
-              <div class="d-c on">Маркетинг<u>тексты, соцсети, сайт</u><em class="mem">49 файлов памяти</em><i>работает</i></div>
-              <div class="d-c on">Автоматизация<u>боты и связки между системами</u><em class="mem">45 файлов памяти</em><i>работает</i></div>
+              <div class="d-c on">Marketing<u>copy, social, the website</u><em class="mem">49 memory files</em><i>running</i></div>
+              <div class="d-c on">Automation<u>bots and the wiring between systems</u><em class="mem">45 memory files</em><i>running</i></div>
               <!-- Было «спеца пока нет» — и это дважды лишнее: состояние уже
                    сказано двумя другими метками той же ячейки (0 файлов и
                    «каркас»), а слово «пока» превращало метку в оправдание.
                    Теперь строка описывает ЗОНУ отдела, как у работающих
                    соседей, а пустоту показывают число и метка. -->
-              <div class="d-c off">Бухгалтерия<u>деньги и отчётность</u><em class="mem">0 файлов памяти</em><i>каркас</i></div>
-              <div class="d-c off">Юридический<u>договоры и риски</u><em class="mem">0 файлов памяти</em><i>каркас</i></div>
+              <div class="d-c off">Accounting<u>money and reporting</u><em class="mem">0 memory files</em><i>shell</i></div>
+              <div class="d-c off">Legal<u>contracts and risk</u><em class="mem">0 memory files</em><i>shell</i></div>
             </div>
-            <!-- Блок .d-out с Пудрой снят 05.08.2026 по аудиту Саши — «надпись
-                 про пудру точно лишняя». Схема отвечает на один вопрос: как
-                 устроен наш мозг. Пудра — чужая компания, её место на соседней
-                 карточке, а не веткой из нашего ядра. -->
+            <!-- Блок .d-out снят 05.08.2026 следом за русской версией: там его
+                 убрал Саша по аудиту, и вместе с ним ушли правила .d-out/.d-ext
+                 из home.css. Оставить разметку здесь значило бы держать на
+                 английской главной блок без единого стиля.
+                 ⚠️ Это не перенос правок дня — тексты EN намеренно отстают до
+                 приёмки. Это починка того, что я сломала сама, снеся CSS. -->
           </div>
         </div>
         <div class="cap">
-          <h3>Второй мозг Whoopy — отделы, у которых нет сотрудников</h3>
+          <h3>Whoopy’s second brain — departments with no employees</h3>
           <!-- Строка «работает с июня 2026» снята 04.08.2026: карточка
                держала четыре ряда текста вместо трёх, хозяин назвал это
                «многовато». Факт не потерян — он и так стоит в абзаце ниже
                («копится с июня»), .st тут был просто вторым способом
                сказать то же самое -->
-          <!-- Хвост «Мы не рассказываем, что умеем строить такие системы, — мы
-               на такой стоим» снят 05.08.2026: Саша прочёл его как понт. Фраза
-               и правда говорила о нас, а не о вещи, — а вещь рядом уже показана
-               схемой, и она убедительнее любого заявления о себе. -->
-          <!-- 05.08.2026, вторая правка Саши: «тут описание, нужно немного
-               другое — просто, что это такое». Было про свойство ячейки
-               (память копится с июня) — верно, но это уже деталь устройства,
-               а читатель на этом месте ещё не знает самой вещи. Теперь
-               подпись отвечает на первый вопрос: что это вообще. -->
-          <p class="desc">Подсказывает там, где мы не&nbsp;сильны, ведёт контент и&nbsp;разбирает идеи&nbsp;— чтобы мы занимались только тем, в&nbsp;чём сильны: самим&nbsp;ИИ.</p>
+          <p class="desc">It steps in where we’re not strong, handles the content, and works through ideas — so we focus only on what we’re good at: AI itself.</p>
           <!-- Аудитор доверия: ссылка тут была с самого начала — вся карточка
                ведёт в разбор, — но глазом это не читалось. У соседней карточки
                Пудры под подписью стоит видимая строка «открыть переписку целиком»,
                а у главной, на которой держатся все проверяемые числа, не было
                ничего: дверь была неотличима от стены. Тот же приём, что рядом -->
-          <p class="more">открыть разбор целиком</p>
+          <p class="more">read the full breakdown</p>
         </div>
       </a>
 
@@ -154,7 +147,7 @@
            Заголовок был «Где нас можно будет читать» — будущее время прямо
            перед разделом с клиентами читалось как признание, что нас нигде
            нет. «Где мы» — то, как хозяин сам назвал этот блок -->
-      <h2>Где мы</h2>
+      <h2>Where we are</h2>
     </div>
 
     <div class="four">
@@ -173,16 +166,16 @@
             </div>
             <div class="chan-body">
               <ul class="plan">
-                <li>хроника работы по факту — включая то, что сломалось</li>
+                <li>a record of the work as it happens — including what breaks</li>
               </ul>
             </div>
-            <div class="chan-state">Главный канал<em>основная площадка</em></div>
+            <div class="chan-state">Main channel<em>our primary home</em></div>
           </div>
         </div>
         <!-- Дата под названием снята: хозяин сказал, что тут в будущем
              встанет число подписчиков, а пока подпись — просто заголовок -->
         <div class="cap">
-          <h3>Канал компании</h3>
+          <h3>The company channel</h3>
         </div>
       </div>
 
@@ -201,14 +194,14 @@
             </div>
             <div class="chan-body">
               <ul class="plan">
-                <li>как собирается мозг — целиком, без склеек «и вот готово»</li>
+                <li>how a brain gets built — start to finish, no cuts to «and here it is»</li>
               </ul>
             </div>
-            <div class="chan-state">Длинное<em>первый ролик — про Пудру</em></div>
+            <div class="chan-state">Long form<em>first film — about Pudra</em></div>
           </div>
         </div>
         <div class="cap">
-          <h3>Разборы целиком</h3>
+          <h3>Full breakdowns</h3>
         </div>
       </div>
 
@@ -228,7 +221,7 @@
             </div>
             <div class="chan-body">
               <ul class="plan">
-                <li>короткое, живое — без длинных разборов</li>
+                <li>short and alive — no long breakdowns here</li>
               </ul>
             </div>
             <!-- Была одна карточка на профиль Саши — хозяин сказал, что
@@ -240,7 +233,7 @@
                  это сказано пунктиром снизу, тем же языком, что у карточек
                  с пометкой .pending, без единого слова оправдания -->
             <div class="chan-state ig">
-              <div class="ig-row"><b>Саша</b><em>оформляем прямо сейчас</em></div>
+              <div class="ig-row"><b>Sasha</b><em>being set up right now</em></div>
               <div class="ig-row ig-pending"><b>Whoopy</b></div>
             </div>
           </div>
@@ -256,7 +249,7 @@
              названы внутри самой карточки («Саша», «Whoopy») — подписи
              незачем их повторять, хватает типа контента -->
         <div class="cap">
-          <h3>Короткое и живое</h3>
+          <h3>Short and alive</h3>
         </div>
       </div>
 
@@ -274,14 +267,14 @@
             </div>
             <div class="chan-body">
               <ul class="plan">
-                <li>то же, что в Telegram — там, где сидят наши клиенты</li>
+                <li>the same as Telegram — where our clients actually are</li>
               </ul>
             </div>
-            <div class="chan-state">Присутствие<em>следом за Telegram</em></div>
+            <div class="chan-state">Presence<em>right after Telegram</em></div>
           </div>
         </div>
         <div class="cap">
-          <h3>Канал в Max</h3>
+          <h3>The Max channel</h3>
         </div>
       </div>
 
@@ -293,13 +286,12 @@
 <section class="sec clients" id="clients">
   <div class="wrap">
     <div class="head rev">
-      <h2>Кому сделали</h2>
-      <!-- 05.08.2026, аудит Саши: «тут тоже надпись немного странная». Была
-           «то же самое, что получают наши клиенты» — заголовок спрашивает
-           КОМУ, а подпись отвечала ЧТО, и вместе они читались как оговорка.
-           Новая подпись отвечает на то возражение, ради которого этот раздел
-           и стоит на странице: «вы себе построили, а чужой компании сможете?» -->
-      <span class="sub">те же специалисты, только в чужих компаниях</span>
+      <h2>Who we built for</h2>
+      <!-- «наши клиенты» вместо «покупателям»: маркетолог заметил, что три
+           экрана подряд читатель не знает наверняка, продаётся ли это вообще
+           другим компаниям или Whoopy просто построила себе. Одно слово
+           закрывает зазор там, где перенос целого раздела стоил бы дороже -->
+      <span class="sub">the same specialists, only in other people’s companies</span>
     </div>
 
     <div class="rail">
@@ -313,20 +305,20 @@
                четвёртая уже вылезает. Переписка целиком — на pudra.html,
                куда карточка и ведёт -->
           <div class="chat">
-            <div class="msg them">Здравствуйте! Хочу торт на субботу</div>
-            <div class="msg us">На сколько человек и какая начинка?</div>
-            <div class="msg them">Человек на десять, шоколадный</div>
+            <div class="msg them">Hi! I’d like a cake for Saturday</div>
+            <div class="msg us">How many people, and what filling?</div>
+            <div class="msg them">About ten people, chocolate</div>
           </div>
           <div class="typeline"><span class="cursor"></span></div>
         </div>
         <div class="cap">
-          <h3>Заказы в кондитерской принимает не человек</h3>
+          <h3>The orders aren’t taken by a person</h3>
           <!-- Строка «Кондитерская Артёма, Москва — работает» была тут
                отдельным .st-рядом — сняла её вместе с остальными, но факт
                (единственное на сайте имя настоящего клиента) не потерян,
                а вплетён в начало абзаца ниже -->
-          <p class="desc">Пудра работает в кондитерской Артёма Кириловского в Москве: такой же ИИ-специалист, только выведенный наружу — внутри такие ведут отделы, здесь разговаривает с покупателями.</p>
-          <p class="more">открыть переписку целиком</p>
+          <p class="desc">Pudra works at Artyom Kirilovskiy’s patisserie in Moscow: the same AI specialist, only turned outward — inside a company they run departments, here she talks to customers.</p>
+          <p class="more">read the whole conversation</p>
         </div>
       </a>
 
@@ -341,30 +333,30 @@
           <div class="shift">
             <div class="sh-row sh-head">
               <b></b>
-              <span>пн</span><span>вт</span><span>ср</span><span>чт</span><span>пт</span><span>сб</span><span>вс</span>
+              <span>mon</span><span>tue</span><span>wed</span><span>thu</span><span>fri</span><span>sat</span><span>sun</span>
             </div>
             <div class="sh-row">
-              <b>зал</b>
+              <b>floor</b>
               <i class="on"></i><i class="on"></i><i></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i>
             </div>
             <div class="sh-row">
-              <b>бар</b>
+              <b>bar</b>
               <i class="on"></i><i></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i>
             </div>
             <div class="sh-row">
-              <b>кухня</b>
+              <b>kitchen</b>
               <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="fix"></i><i class="on"></i><i class="on"></i>
             </div>
             <div class="sh-row">
-              <b>хостес</b>
+              <b>host</b>
               <i></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i>
             </div>
           </div>
         </div>
         <div class="cap">
-          <h3>Смены сотрудников ставит не управляющий</h3>
-          <p class="desc">В Stories Lounge расстановкой по сменам занимается ИИ-специалист: держит график целиком и следит, чтобы ни одна смена не осталась без людей.</p>
-          <p class="more">посмотреть, как устроен график</p>
+          <h3>Staff shifts aren’t set by the manager</h3>
+          <p class="desc">At Stories Lounge the rota is handled by an AI specialist: it holds the whole schedule and makes sure no shift is left without people.</p>
+          <p class="more">see how the rota works</p>
         </div>
       </a>
 
@@ -374,16 +366,16 @@
           <!-- Три реплики из пяти и короче, чем на внутренней странице, — по той
                же мерке, что у соседней карточки. Целиком — на hiring.html -->
           <div class="chat">
-            <div class="msg us">Где работали последний год?</div>
-            <div class="msg them">Бармен, полтора года, кофейня на Никольской</div>
-            <div class="msg us">Что делали в час пик, когда очередь?</div>
+            <div class="msg us">Where did you work over the past year?</div>
+            <div class="msg them">Bartender, a year and a half, a coffee shop on Nikolskaya</div>
+            <div class="msg us">What did you do at peak hour, with a queue?</div>
           </div>
           <div class="typeline"><span class="cursor"></span></div>
         </div>
         <div class="cap">
-          <h3>Собеседование проводит не человек</h3>
-          <p class="desc">Второй специалист того же заведения разговаривает с кандидатами сам: ведёт интервью, задаёт вопросы по делу и приносит владельцу итог, а не стопку откликов.</p>
-          <p class="more">открыть интервью целиком</p>
+          <h3>The interview isn’t run by a person</h3>
+          <p class="desc">A second specialist at the same venue talks to candidates itself: it runs the interview, asks the questions that matter and brings the owner a conclusion instead of a pile of applications.</p>
+          <p class="more">read the full interview</p>
         </div>
       </a>
 
@@ -405,15 +397,12 @@
            ИИ-специалистов») и для кого это. Перечисление снято — оно же
            дублирует две карточки продукта ниже; осталась одна строка про
            клиента. -->
-      <h2>Что делаем</h2>
-      <p class="signboard">Собираем второй мозг<br>под вашу компанию</p>
-      <!-- 05.08.2026, аудит Саши: «в тему ли тут надпись?» Была «Для тех, у кого
-           дела держатся на голове владельца — и рассыпаются, стоит ему
-           отвлечься». Вывеска над ней зовёт вперёд, а строка тянула назад в
-           неприятное — и говорила про боль, а не про вещь. Новая формулировка —
-           слово самого Саши из аудита: мозг «закрыл направления, в которых мы не
-           понимаем». Она же не дублирует карточки продуктов ниже. -->
-      <p class="lead">Закрывает направления, в&nbsp;которых владелец не&nbsp;разбирается или до&nbsp;которых не&nbsp;доходят руки.</p>
+      <h2>What we do</h2>
+      <p class="signboard">We build a second brain<br>for your company</p>
+      <!-- В английской версии владелец — they, а не he: пол клиента мы не
+           знаем, и «he» в этом месте сужает адресата без всякой на то причины.
+           В русском той же проблемы нет — там «владельца» и «ему» родовые -->
+      <p class="lead">It covers the areas an owner doesn’t understand, or the ones they never get round to.</p>
     </div>
 
     <!-- Раздел был чистым текстом — вывеска и три абзаца. Саша: «тут можно
@@ -442,12 +431,12 @@
               <path d="M40 84v12M80 84v12M120 84v12M160 84v12" stroke-dasharray="3 4" opacity=".6"/>
             </svg>
           </div>
-          <div class="state-big">Внутрь компании<em>планирование, финансы, реклама, задачи</em></div>
+          <div class="state-big">Inside the company<em>planning, finances, promotion, tasks</em></div>
         </div>
         <div class="cap">
-          <h3>Второй мозг</h3>
-          <p class="desc">Управляющий центр с отделами и памятью. Владелец продолжает делать то, в&nbsp;чём он лучший, — остальное ведёт мозг.</p>
-          <p class="more">что входит</p>
+          <h3>Second brain</h3>
+          <p class="desc">A control centre with departments and a memory. The owner keeps doing what they do best — the brain runs the rest.</p>
+          <p class="more">what’s included</p>
         </div>
       </a>
 
@@ -472,12 +461,12 @@
               <path d="M157 48c1.5-6.5 5.5-10 11-10s9.5 3.5 11 10"/>
             </svg>
           </div>
-          <div class="state-big">Наружу и внутрь<em>ведёт отдел или говорит с вашими клиентами</em></div>
+          <div class="state-big">Outward and inward<em>runs a department or talks to your customers</em></div>
         </div>
         <div class="cap">
-          <h3>ИИ-специалист</h3>
-          <p class="desc">Сотрудник со своей памятью и своей зоной. Внутри такие ведут отделы, снаружи — принимают заказы, как Пудра в&nbsp;кондитерской.</p>
-          <p class="more">что входит</p>
+          <h3>AI specialist</h3>
+          <p class="desc">An employee with a memory and a remit of its own. Inside they run departments; outside they take orders, like Pudra at the patisserie.</p>
+          <p class="more">what’s included</p>
         </div>
       </a>
 
@@ -489,7 +478,7 @@
 <footer id="write">
   <div class="wrap">
     <!-- ⚠️ href подставить: прямая ссылка на Сашу -->
-    <a class="door rev" href="https://t.me/mr_nobode" target="_blank" rel="noopener">Написать</a>
+    <a class="door rev" href="https://t.me/mr_nobode" target="_blank" rel="noopener">Get in touch</a>
     <!-- Строка «Отвечает Саша…» снята 03.08.2026 по его слову: у двери человек
          решает, писать или нет, и лишняя строка держала внимание, а не отпускала. -->
     <!-- Здесь стояла подпись «эту страницу собрал второй мозг Whoopy».
@@ -500,6 +489,6 @@
   </div>
 </footer>
 
-<script src="home.js"></script>
+<script src="../home.js"></script>
 </body>
 </html>
