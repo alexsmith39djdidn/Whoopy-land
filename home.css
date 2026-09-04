@@ -773,3 +773,33 @@ html.js .rev.in{opacity:1;transform:none}
   vertical-align:-.07em;margin-left:.06em;animation:blink 1.06s step-end infinite;
 }
 @media (prefers-reduced-motion:reduce){.caret{animation:none;opacity:0}}
+
+/* ── Куда ходили ─────────────────────────────────────────────
+   Раздел заведён 04.09.2026. Тон взят от «Где мы» — оба про то,
+   как компания показывается наружу; свой цвет заводить не стала,
+   палитра и так на пределе. Карточка одна и лежит в две колонки:
+   фото вертикальное (4:5, как в ленте), подпись рядом. Лентой
+   .rail не делаю — при одной карточке flex растянул бы фото на
+   всю ширину, и вертикальный кадр вырос бы на два экрана. */
+.sec.went{--tone:var(--social);--shot:#121417;--glow-y:12%;--glow-r:-9deg}
+.trip{
+  display:grid;
+  grid-template-columns:minmax(0,360px) minmax(0,1fr);
+  gap:calc(var(--u)*5);
+  align-items:center;
+}
+.trip-shot{aspect-ratio:4/5}
+.trip-shot img{
+  position:absolute;inset:0;
+  width:100%;height:100%;
+  object-fit:cover;display:block;
+}
+.trip-cap{margin-top:0;max-width:52ch}
+/* дата отдельной строкой под названием: в подписи это единственное
+   место, где число обязано читаться сразу — раздел про «когда» */
+.cap .when{margin-top:calc(var(--u)*.75);font-size:15px;color:var(--ink2)}
+
+@media (max-width:900px){
+  .trip{grid-template-columns:1fr;gap:calc(var(--u)*3)}
+  .trip-shot{max-width:340px}
+}
