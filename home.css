@@ -784,7 +784,7 @@ html.js .rev.in{opacity:1;transform:none}
 .sec.went{--tone:var(--social);--shot:#121417;--glow-y:12%;--glow-r:-9deg}
 .trip{
   display:grid;
-  grid-template-columns:minmax(0,360px) minmax(0,1fr);
+  grid-template-columns:minmax(0,300px) minmax(0,1fr);
   gap:calc(var(--u)*5);
   align-items:center;
 }
@@ -801,15 +801,14 @@ html.js .rev.in{opacity:1;transform:none}
 
 @media (max-width:900px){
   .trip{grid-template-columns:1fr;gap:calc(var(--u)*3)}
-  .trip-shot{max-width:340px}
+  .trip-shot{max-width:300px}
 }
 
-/* На телефоне 340px оставляли справа щель — до 26px на 414 — и правый край
-   кадра не совпадал с правым краем подписи под ним. Разнобой краёв читается
-   как случайность вёрстки, а не как решение. Ниже 640px фото идёт по ширине
-   колонки: оба края кадра встают на края текста. Ограничение 340px остаётся
-   выше этой границы, где колонка широкая и кадр 4:5 без него вырос бы на
-   два экрана. */
+/* Кадр на телефоне ужат по слову Саши 04.09: раздел занимал почти весь
+   экран, а «Куда ходили» — заметка, а не витрина.
+   260px — примерно две трети ширины телефона: разница с текстом теперь
+   крупная и читается как решение. Промежуточные 340px давали щель в
+   26px — ни выравнивания, ни отличия, только вид случайной ошибки. */
 @media (max-width:640px){
-  .trip-shot{max-width:none}
+  .trip-shot{max-width:260px}
 }
