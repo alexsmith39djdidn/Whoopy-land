@@ -1469,3 +1469,18 @@ html.js .rev.in{opacity:1;transform:none}
   .bn-row u{text-align:left}
   .bn-row i{width:var(--w)}
 }
+
+/* ── Цена и «скоро» · 24.09.2026, решения главы компании ──
+   Цена агента и специалиста — одной строкой, под ней мелко, на чьём
+   аккаунте работает: без второй строки «50 000 один раз» читается как
+   скрытая подписка (ловили 22.09). Плашка «скоро» — у мозга, чья продажа
+   в отсрочке: страница остаётся, но не обещает то, чего сейчас не купить. */
+.page > .price{max-width:620px;margin:0 auto calc(var(--u)*3)}
+.price b{display:block;font-size:clamp(28px,3.4vw,36px);font-weight:500;letter-spacing:-.02em;line-height:1.15}
+.price small{display:block;margin-top:calc(var(--u)*1);font-size:14px;color:var(--grey)}
+.soon-bar{display:inline-flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin:0 auto calc(var(--u)*3);
+  padding:10px 16px;border:1px dashed rgba(17,17,17,.3);border-radius:99px;font-size:15px;color:var(--ink);
+  background:rgba(255,255,255,.7);position:relative;z-index:2}
+.soon-bar b{font-weight:500}
+.soon-bar a{color:var(--ink);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+@media (max-width:640px){ .soon-bar{border-radius:14px;font-size:14px} }

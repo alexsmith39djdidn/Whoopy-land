@@ -25,7 +25,7 @@
      Плашка мозга — отдельный <section class="prod soon">, ни на что
      не ссылается и ничем не держится: её можно снять целиком, страница
      останется целой (слово Саши 21.09: «не факт, что будем делать»). -->
-<link rel="stylesheet" href="page.css">
+<link rel="stylesheet" href="page.css?v=2409">
 <style>
 .page > .lead{color:var(--grey);font-size:19px}
 .page > .prod{
@@ -57,6 +57,9 @@
   .prod li{grid-template-columns:1fr;gap:calc(var(--u)*.75)}
 }
 </style>
+<style>.page .more-link{margin-top:calc(var(--u)*2)}.page .more-link a{color:var(--ink);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}.page .more-link a::after{content:" →"}</style>
+<!-- Дверь под агентом и спецом · 26.09.2026: «ноль CTA» сменило слово Саши 24.09 — дверь одна, его Telegram. -->
+<style>.page .tg-door{margin-top:calc(var(--u)*3)}.page .tg-door .door{font-size:16px}</style>
 </head>
 <body>
 
@@ -80,6 +83,8 @@
       <li><b>Что это</b><span>Агент берёт на&nbsp;себя одно дело и&nbsp;делает его каждый день. Например, отвечает на&nbsp;заявки сразу и&nbsp;доводит их&nbsp;до&nbsp;записи или до&nbsp;вашего человека.</span></li>
       <li><b>Что нужно от&nbsp;вас</b><span>Час разговора, доступ туда, куда приходят заявки, и&nbsp;человек, который первые дни смотрит за&nbsp;ответами.</span></li>
     </ul>
+      <p class="more-link"><a href="product-agent.html">подробнее</a></p>
+      <div class="tg-door"><a class="door" href="https://t.me/mr_nobode" target="_blank" rel="noopener">Написать Саше в&nbsp;Telegram</a></div>
   </section>
 
   <section class="prod" id="specialist">
@@ -91,11 +96,14 @@
       <li><b>Что это</b><span>Специалист встаёт на&nbsp;место сотрудника и&nbsp;ведёт его участок целиком. Агент отвечает на&nbsp;заявки, а&nbsp;специалист делает всю работу администратора: записи, переносы, напоминания, ответы на&nbsp;вопросы, график смен. Он не&nbsp;уходит в&nbsp;отпуск и&nbsp;не&nbsp;увольняется.</span></li>
       <li><b>Что нужно от&nbsp;вас</b><span>Описание участка своими словами, доступы к&nbsp;рабочим программам и&nbsp;ответы на&nbsp;вопросы первых недель.</span></li>
     </ul>
+      <p class="more-link"><a href="product-specialist.html">подробнее</a></p>
+      <div class="tg-door"><a class="door" href="https://t.me/mr_nobode" target="_blank" rel="noopener">Написать Саше в&nbsp;Telegram</a></div>
   </section>
 
   <section class="prod soon" id="brain">
     <div class="name"><span>03</span><b>Второй мозг</b><span class="badge">скоро</span></div>
     <p>Управляющий центр компании: видит дело целиком и&nbsp;ведёт внутреннюю работу&nbsp;— план недели, задачи людям, сроки. Сейчас он работает у&nbsp;нас, в&nbsp;Whoopy, каждый день. Для других компаний мы&nbsp;его готовим.</p>
+      <p class="more-link"><a href="product-brain.html">подробнее</a></p>
   </section>
 
 </article>

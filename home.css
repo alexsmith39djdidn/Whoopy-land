@@ -849,3 +849,7 @@ html.js .rev.in{opacity:1;transform:none}
    «Куда ходили»: обе отвечают на «что это и сколько занимает» */
 .cap .kind{margin-top:calc(var(--u)*.75);font-size:15px;color:var(--ink2)}
 
+/* «Где мы» из двух живых площадок — две широкие карточки вместо четырёх квадратов · 26.09.2026 */
+.four.two-ch{grid-template-columns:repeat(2,minmax(0,420px))}
+.four.two-ch .shot{aspect-ratio:16/10}
+@media (max-width:640px){ .four.two-ch{grid-template-columns:1fr} }
